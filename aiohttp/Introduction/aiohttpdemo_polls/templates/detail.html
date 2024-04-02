@@ -1,0 +1,9 @@
+{% set title = "Detail" %}
+
+<p>{{ question.question_text }}</p>
+<ul>
+{% for choice in choices %}
+    <li>{{ choice.votes }} - {{ choice.choice_text }}</li>
+{% endfor %}
+</ul>
+
